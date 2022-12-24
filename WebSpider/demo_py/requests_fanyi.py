@@ -19,6 +19,7 @@ if __name__ == "__main__":
         response = requests.post(url=url,data=data,headers=headers)#params对应的就是一个字典类型变量
         #text = response.text
         dic_obj = response.json()#确认数据是json数据才可
+        #这些地方是将得到的数据调整输出格式，并且不保存
         # fileName = './demoData/'+kw+'.json'
         # with open(fileName,'w',encoding='utf-8') as fp:
         #     json.dump(dic_obj,fp=fp,ensure_ascii=False)#有中文，不能用ASCII编码

@@ -31,6 +31,6 @@ https：安全的超文本传输协议
 
 ### 使用demo
 
-[爬取文件的案例](requests_test.py)
+[爬取文件的案例](./demo_py/requests_test.py)
 
 爬取了搜狗首页的数据
