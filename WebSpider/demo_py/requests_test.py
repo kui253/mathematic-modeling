@@ -11,7 +11,7 @@ if __name__ == "__main__":
     page_text = response.text#字符串形式数据
     print(page_text)
     #step4:存储
-    with open('./data/sogou.html','w',encoding='utf-8') as fp:
+    with open('./demoData/sogou.html','w',encoding='utf-8') as fp:
         fp.write(page_text)
     print('数据爬取结束')
 
