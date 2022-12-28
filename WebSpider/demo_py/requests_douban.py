@@ -10,13 +10,13 @@ if __name__ == "__main__":
         "type": '24',
         'interval_id': '100:90',
         'action':' ', 
-        'start': '0',
-        'limit': '20'
+        'start': '0',#从第几部开始取出来
+        'limit': '20'#取出第几个电影
     }
     response = requests.get(url=url,params=param,headers=headers)
     list_data = response.json()
     kw = 'douban'
-    fileName = './WebSpider/demoData/'+kw+'.json'
+    fileName = './demoData/'+kw+'.json'
     with open(fileName,'w',encoding='utf-8') as fp:
         json.dump(list_data,fp=fp,ensure_ascii=False)#有中文，不能用ASCII编码
         #一开始出现了路径问题
